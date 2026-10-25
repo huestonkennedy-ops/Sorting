@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Sorter {
     public static int smallest(int[] array) {
        int smallest = array[0];
@@ -39,7 +37,6 @@ public class Sorter {
     }
     public static void sort(int[] array) {
         for(int i = 0; i<array.length; i++) {
-            System.out.println(Arrays.toString(array));
             int temp = indexOfSmallestFrom(array, i);
             swap(array, i, temp);
         }
